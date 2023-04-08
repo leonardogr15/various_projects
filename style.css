@@ -1,0 +1,121 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#navbar {
+    background-color: cornflowerblue;
+    height: 5%;
+}
+
+#div_father {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#div_son_1 {
+    height: 50%;
+    width: 50%;
+    background-color: beige;
+    padding-bottom: 100px;
+}
+
+#div_son_2 {
+    height: 50%;
+    width: 50%;
+    background-color: brown;
+    padding-bottom: 100px;
+}
+
+#div_son_3 {
+    height: 25%;
+    width: 100%;
+    background-color: blueviolet;
+
+}
+
+#div_son_4 {
+    height: 25%;
+    width: 100%;
+    background-color: rgb(42, 110, 165);
+
+}
+
+#div_son_5 {
+    height: 50%;
+    width: 100%;
+    background-color: rgb(226, 80, 69);
+
+}
+
+#calculator {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 24px;
+    text-align: right;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#button_cal_c,#button_cal_ac,#button_cal,#button_cal_equal {
+    background-color: #eee;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#button_cal:hover {
+    background-color: #ccc;
+}
+
+#button_cal_ac {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#button_cal_ac:hover {
+    background-color: #d32f2f;
+}
+
+#button_cal_c {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#button_cal_c:hover {
+    background-color: #388e3c;
+}
+
+#button_cal_equal {
+    background-color: #2196f3;
+    color: #fff;
+    width: 45%;
+}
+
+#button_cal_equal:hover {
+    background-color: #1976d2;
+}

@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div id="navbar">navbar</div>
+    <div id="div_father">
+        <div id="div_son_1">
+            <div id="calculator">
+                <div id="result"></div>
+                <button id ='button_cal_c' class="button c" onclick="clearResult()">C</button>
+                <button id ='button_cal_ac' class="button ac" onclick="clearAll()">AC</button>
+                <button id ='button_cal' class="button" >&nbsp;</button>
+                <button id ='button_cal' class="button" onclick="appendToResult('/')">/</button>
+                <button id ='button_cal' class="button" onclick="appendToResult(7)">7</button>
+                <button id ='button_cal' class="button" onclick="appendToResult(8)">8</button>
+                <button id ='button_cal' class="button" onclick="appendToResult(9)">9</button>
+                <button id ='button_cal' class="button" onclick="appendToResult('*')">*</button>
+                <button id ='button_cal' class="button" onclick="appendToResult(4)">4</button>
+                <button id ='button_cal' class="button" onclick="appendToResult(5)">5</button>
+                <button id ='button_cal' class="button" onclick="appendToResult(6)">6</button>
+                <button id ='button_cal' class="button" onclick="appendToResult('-')">-</button>
+                <button id ='button_cal' class="button" onclick="appendToResult(1)">1</button>
+                <button id ='button_cal' class="button" onclick="appendToResult(2)">2</button>
+                <button id ='button_cal' class="button" onclick="appendToResult(3)">3</button>
+                <button id ='button_cal' class="button" onclick="appendToResult('+')">+</button>
+                <button id ='button_cal' class="button" onclick="appendToResult(0)">0</button>
+                <button id ='button_cal' class="button" onclick="appendToResult('.')">.</button>
+                <button id ='button_cal_equal' class="button equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+        <div id="div_son_2"> hola</div>
+        <div id="div_son_3"> hola</div>
+        <div id="div_son_4"> hola</div>
+        <div id="div_son_5"> hola</div>
+    </div>
+    <script src="./controller.js"></script>
 </body>
+
 </html>
