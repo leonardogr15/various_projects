@@ -1,77 +1,126 @@
-html,
-body {
-    height: 100%;
+* {
     margin: 0;
+    padding: 0;
 }
 
-#navbar {
-    background-color: cornflowerblue;
-    height: 5%;
+body {
+    background: #E9ECF4;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
 }
 
-#div_father {
-    height: 100%;
-    width: 100%;
-    background-color: aqua;
-    display: flex;
-    flex-wrap: wrap;
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header"
+        "contenido contenido sidebar"
+        "widget-1 widget-2 sidebar"
+        "footer footer footer";
 }
 
-#div_son_1 {
-    height: 50%;
-    width: 50%;
-    background-color: beige;
-    padding-bottom: 100px;
-}
-
-#div_son_2 {
-    height: 50%;
-    width: 50%;
-    background-color: brown;
-    padding-bottom: 100px;
-}
-
-#div_son_3 {
-    height: 25%;
-    width: 100%;
-    background-color: blueviolet;
-
-}
-
-#div_son_4 {
-    height: 25%;
-    width: 100%;
-    background-color: rgb(42, 110, 165);
-
-}
-
-#div_son_5 {
-    height: 50%;
-    width: 100%;
-    background-color: rgb(226, 80, 69);
-
-}
-
-#calculator {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
-    margin: 50px auto;
+.contenedor>div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+    background: #fff;
     padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header {
+    background: #12203E;
+    color: #fff;
+    grid-area: header;
+}
+
+.contenedor .contenido {
+    grid-area: contenido;
+    display: flex;
+}
+
+.contenedor .sidebar {
+    grid-column: 3 / 4;
+    background: #fAA43D;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    background: #55a8fd;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .widget-1 {
+    grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+    grid-area: widget-2;
+}
+
+.contenedor .footer {
+    background: #12203E;
+    color: #fff;
+    grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-areas: "header header header"
+            "contenido contenido contenido"
+            "sidebar sidebar sidebar"
+            "widget-1 widget-1 widget-2"
+            "footer footer footer";
+    }
+    
+}
+
+/* DESDE AQUI COMIENZAN LOS ESTILOS APLICADOS A LA CALCULADORA */
+
+
+
+#div_first{
+    background-color: #12203E;
+    height: 500px;
+    width: 50%;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#div_second{
+    background-color:#55a8fd;
+    height: 500px;
+    width: 50%;
+    margin: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #result {
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
     border-radius: 3px;
     padding: 5px;
     font-size: 24px;
     text-align: right;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
+    height: 15%;
     box-sizing: border-box;
+    margin: 10px;
 }
 
 #button_cal_c,#button_cal_ac,#button_cal,#button_cal_equal {
@@ -79,10 +128,9 @@ body {
     border: none;
     color: #333;
     font-size: 18px;
-    padding: 10px;
-    width: 20%;
+    width: 51px;
     height: 50px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
     cursor: pointer;
     box-sizing: border-box;
@@ -111,11 +159,11 @@ body {
 }
 
 #button_cal_equal {
-    background-color: #2196f3;
+    background-color: #12203E;
     color: #fff;
-    width: 45%;
+    width: 127px;
 }
 
 #button_cal_equal:hover {
-    background-color: #1976d2;
+    background-color: #12203E;
 }

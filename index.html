@@ -12,37 +12,50 @@
 </head>
 
 <body>
-    <div id="navbar">navbar</div>
-    <div id="div_father">
-        <div id="div_son_1">
-            <div id="calculator">
-                <div id="result"></div>
-                <button id ='button_cal_c' class="button c" onclick="clearResult()">C</button>
-                <button id ='button_cal_ac' class="button ac" onclick="clearAll()">AC</button>
-                <button id ='button_cal' class="button" >&nbsp;</button>
-                <button id ='button_cal' class="button" onclick="appendToResult('/')">/</button>
-                <button id ='button_cal' class="button" onclick="appendToResult(7)">7</button>
-                <button id ='button_cal' class="button" onclick="appendToResult(8)">8</button>
-                <button id ='button_cal' class="button" onclick="appendToResult(9)">9</button>
-                <button id ='button_cal' class="button" onclick="appendToResult('*')">*</button>
-                <button id ='button_cal' class="button" onclick="appendToResult(4)">4</button>
-                <button id ='button_cal' class="button" onclick="appendToResult(5)">5</button>
-                <button id ='button_cal' class="button" onclick="appendToResult(6)">6</button>
-                <button id ='button_cal' class="button" onclick="appendToResult('-')">-</button>
-                <button id ='button_cal' class="button" onclick="appendToResult(1)">1</button>
-                <button id ='button_cal' class="button" onclick="appendToResult(2)">2</button>
-                <button id ='button_cal' class="button" onclick="appendToResult(3)">3</button>
-                <button id ='button_cal' class="button" onclick="appendToResult('+')">+</button>
-                <button id ='button_cal' class="button" onclick="appendToResult(0)">0</button>
-                <button id ='button_cal' class="button" onclick="appendToResult('.')">.</button>
-                <button id ='button_cal_equal' class="button equal" onclick="calculate()">=</button>
+    <div class="contenedor">
+		<header class="header">
+			<h2>HEADER</h2>
+		</header>
+		<main class="contenido">
+			<div id="div_first">
             </div>
-        </div>
-        <div id="div_son_2"> hola</div>
-        <div id="div_son_3"> hola</div>
-        <div id="div_son_4"> hola</div>
-        <div id="div_son_5"> hola</div>
-    </div>
+			<div id="div_second">
+                <div id="result"></div>
+                <button id ='button_cal_c' onclick="clearResult()">C</button>
+                <button id ='button_cal_ac' onclick="clearAll()">AC</button>
+                <button id ='button_cal' >&nbsp;</button>
+                <button id ='button_cal' onclick="appendToResult('/')">/</button>
+                <button id ='button_cal' onclick="appendToResult(7)">7</button>
+                <button id ='button_cal' onclick="appendToResult(8)">8</button>
+                <button id ='button_cal' onclick="appendToResult(9)">9</button>
+                <button id ='button_cal' onclick="appendToResult('*')">*</button>
+                <button id ='button_cal' onclick="appendToResult(4)">4</button>
+                <button id ='button_cal' onclick="appendToResult(5)">5</button>
+                <button id ='button_cal' onclick="appendToResult(6)">6</button>
+                <button id ='button_cal' onclick="appendToResult('-')">-</button>
+                <button id ='button_cal' onclick="appendToResult(1)">1</button>
+                <button id ='button_cal' onclick="appendToResult(2)">2</button>
+                <button id ='button_cal' onclick="appendToResult(3)">3</button>
+                <button id ='button_cal' onclick="appendToResult('+')">+</button>
+                <button id ='button_cal' onclick="appendToResult(0)">0</button>
+                <button id ='button_cal' onclick="appendToResult('.')">.</button>
+                <button id ='button_cal_equal' onclick="calculate()">=</button>
+            </div>
+		</main>
+		<aside class="sidebar">
+			<h3>SIDEBAR</h3>
+		</aside>
+		<div class="widget-1">
+			<h3>WIDGET 1</h3>
+		</div>
+		<div class="widget-2">
+			<h3>WIDGET 2</h3>
+		</div>
+		<footer class="footer">
+			<h3>FOOTER</h3>
+		</footer>
+        
+	</div>
     <script src="./controller.js"></script>
 </body>
 
