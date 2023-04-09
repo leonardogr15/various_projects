@@ -13,49 +13,57 @@
 
 <body>
     <div class="contenedor">
-		<header class="header">
-			<h2>HEADER</h2>
-		</header>
-		<main class="contenido">
-			<div id="div_first">
+        <header class="header">
+            <h2>HEADER</h2>
+        </header>
+        <main class="contenido">
+            <div id="div_first">
+                <h1>Contador Pomodoro</h1>
+                <div class="timer-display">
+                    25:00
+                </div>
+                <div class="buttons">
+                    <button id="start" class="start-btn">Iniciar</button>
+                    <button id="stop" class="reset-btn">Detener</button>
+                </div>
             </div>
-			<div id="div_second">
+            <div id="div_second">
                 <div id="result"></div>
-                <button id ='button_cal_c' onclick="clearResult()">C</button>
-                <button id ='button_cal_ac' onclick="clearAll()">AC</button>
-                <button id ='button_cal' >&nbsp;</button>
-                <button id ='button_cal' onclick="appendToResult('/')">/</button>
-                <button id ='button_cal' onclick="appendToResult(7)">7</button>
-                <button id ='button_cal' onclick="appendToResult(8)">8</button>
-                <button id ='button_cal' onclick="appendToResult(9)">9</button>
-                <button id ='button_cal' onclick="appendToResult('*')">*</button>
-                <button id ='button_cal' onclick="appendToResult(4)">4</button>
-                <button id ='button_cal' onclick="appendToResult(5)">5</button>
-                <button id ='button_cal' onclick="appendToResult(6)">6</button>
-                <button id ='button_cal' onclick="appendToResult('-')">-</button>
-                <button id ='button_cal' onclick="appendToResult(1)">1</button>
-                <button id ='button_cal' onclick="appendToResult(2)">2</button>
-                <button id ='button_cal' onclick="appendToResult(3)">3</button>
-                <button id ='button_cal' onclick="appendToResult('+')">+</button>
-                <button id ='button_cal' onclick="appendToResult(0)">0</button>
-                <button id ='button_cal' onclick="appendToResult('.')">.</button>
-                <button id ='button_cal_equal' onclick="calculate()">=</button>
+                <button id='button_cal_c' onclick="clearResult()">C</button>
+                <button id='button_cal_ac' onclick="clearAll()">AC</button>
+                <button id='button_cal'>&nbsp;</button>
+                <button id='button_cal' onclick="appendToResult('/')">/</button>
+                <button id='button_cal' onclick="appendToResult(7)">7</button>
+                <button id='button_cal' onclick="appendToResult(8)">8</button>
+                <button id='button_cal' onclick="appendToResult(9)">9</button>
+                <button id='button_cal' onclick="appendToResult('*')">*</button>
+                <button id='button_cal' onclick="appendToResult(4)">4</button>
+                <button id='button_cal' onclick="appendToResult(5)">5</button>
+                <button id='button_cal' onclick="appendToResult(6)">6</button>
+                <button id='button_cal' onclick="appendToResult('-')">-</button>
+                <button id='button_cal' onclick="appendToResult(1)">1</button>
+                <button id='button_cal' onclick="appendToResult(2)">2</button>
+                <button id='button_cal' onclick="appendToResult(3)">3</button>
+                <button id='button_cal' onclick="appendToResult('+')">+</button>
+                <button id='button_cal' onclick="appendToResult(0)">0</button>
+                <button id='button_cal' onclick="appendToResult('.')">.</button>
+                <button id='button_cal_equal' onclick="calculate()">=</button>
             </div>
-		</main>
-		<aside class="sidebar">
-			<h3>SIDEBAR</h3>
-		</aside>
-		<div class="widget-1">
-			<h3>WIDGET 1</h3>
-		</div>
-		<div class="widget-2">
-			<h3>WIDGET 2</h3>
-		</div>
-		<footer class="footer">
-			<h3>FOOTER</h3>
-		</footer>
-        
-	</div>
+        </main>
+        <aside class="sidebar">
+            <h3>SIDEBAR</h3>
+        </aside>
+        <div class="widget-1">
+            <h3>WIDGET 1</h3>
+        </div>
+        <div class="widget-2">
+            <h3>WIDGET 2</h3>
+        </div>
+        <footer class="footer">
+            <h3>FOOTER</h3>
+        </footer>
+
+    </div>
     <script src="./controller.js"></script>
 </body>
 

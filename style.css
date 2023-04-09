@@ -89,14 +89,12 @@ body {
             "widget-1 widget-1 widget-2"
             "footer footer footer";
     }
-    
+
 }
 
 /* DESDE AQUI COMIENZAN LOS ESTILOS APLICADOS A LA CALCULADORA */
 
-
-
-#div_first{
+#div_first {
     background-color: #12203E;
     height: 500px;
     width: 50%;
@@ -104,8 +102,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#div_second{
-    background-color:#55a8fd;
+#div_second {
+    background-color: #55a8fd;
     height: 500px;
     width: 50%;
     margin: 5px;
@@ -123,7 +121,10 @@ body {
     margin: 10px;
 }
 
-#button_cal_c,#button_cal_ac,#button_cal,#button_cal_equal {
+#button_cal_c,
+#button_cal_ac,
+#button_cal,
+#button_cal_equal {
     background-color: #eee;
     border: none;
     color: #333;
@@ -166,4 +167,39 @@ body {
 
 #button_cal_equal:hover {
     background-color: #12203E;
+}
+
+/* INIAN LOS ESTILOS PARA EL CONTADOR POMODORO*/
+
+
+#div_first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+.timer-display {
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+button {
+    font-size: 24px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.2s;
+}
+button:hover {
+    background-color: #3e8e41;
 }
